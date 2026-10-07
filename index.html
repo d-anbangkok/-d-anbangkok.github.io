@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D’AN — Tattoo & Barber Bangkok</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#111;font-family:Arial,Helvetica,sans-serif}
+header{height:75px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #111}
+.logo{font-size:30px;font-weight:900;letter-spacing:-2px}
+nav{display:flex;gap:25px}
+nav a{color:#111;text-decoration:none;font-size:12px;font-weight:bold;letter-spacing:1px}
+.hero{min-height:78vh;padding:8vh 5vw 5vh;display:flex;flex-direction:column;justify-content:space-between}
+.location{font-size:12px;font-weight:bold;letter-spacing:3px;margin-bottom:25px}
+h1{margin:0;font-size:clamp(65px,14vw,180px);line-height:.78;letter-spacing:-8px;font-weight:950}
+.outline{color:transparent;-webkit-text-stroke:2px #111}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:80px}
+.description{font-size:16px;line-height:1.5;max-width:400px}
+.button{background:#111;color:white;padding:18px 28px;text-decoration:none;font-size:12px;font-weight:bold;letter-spacing:1px}
+section{padding:70px 5vw;border-top:1px solid #111}
+.section-title{font-size:12px;font-weight:bold;letter-spacing:3px;margin-bottom:35px}
+.services{display:grid;grid-template-columns:1fr 1fr}
+.service{font-size:clamp(35px,6vw,80px);font-weight:900;letter-spacing:-4px;padding:25px 0;border-bottom:1px solid #111}
+.work{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.work-box{height:350px;background:#eee;display:flex;align-items:end;padding:20px;font-size:22px;font-weight:bold}
+.work-box:nth-child(2){background:#e5e5e5}.work-box:nth-child(3){background:#ededed}.work-box:nth-child(4){background:#ddd}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:50px;line-height:1.7}
+.map-link{display:inline-block;margin-top:25px;color:#111;text-decoration:none;border:1px solid #111;padding:14px 20px;font-size:12px;font-weight:bold;letter-spacing:1px}
+footer{background:#fff;color:#111;padding:50px 5vw;display:flex;justify-content:space-between;align-items:end;border-top:1px solid #111}
+.footer-logo{font-size:60px;font-weight:900;letter-spacing:-5px}
+@media(max-width:650px){
+nav{gap:12px}nav a:first-child{display:none}
+h1{font-size:22vw}.hero-bottom{display:block}.button{display:inline-block;margin-top:25px}
+.services,.work,.info{grid-template-columns:1fr}.work-box{height:260px}
+footer{display:block}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">D’AN</div>
+<nav><a href="#work">WORK</a><a href="#services">SERVICES</a><a href="#contact">BOOK</a></nav>
+</header>
+
+<section class="hero">
+<div>
+<div class="location">BANGKOK · THAILAND</div>
+<h1>TATTOO<br><span class="outline">BARBER</span></h1>
+</div>
+<div class="hero-bottom">
+<div class="description">Custom tattoos. Sharp cuts.<br>One studio near Khao San Road.</div>
+<a class="button" href="#contact">DM TO BOOK →</a>
+</div>
+</section>
+
+<section id="work">
+<div class="section-title">SELECTED WORK</div>
+<div class="work">
+<div class="work-box">TATTOO 01</div>
+<div class="work-box">TATTOO 02</div>
+<div class="work-box">TATTOO 03</div>
+<div class="work-box">BARBER 01</div>
+</div>
+</section>
+
+<section id="services">
+<div class="section-title">SERVICES</div>
+<div class="services">
+<div class="service">TATTOO</div>
+<div class="service">BARBER</div>
+<div class="service">CUSTOM DESIGN</div>
+<div class="service">WALK-INS</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title">FIND D’AN</div>
+<div class="info">
+<div>
+<strong>NEAR KHAO SAN ROAD</strong><br>
+Bangkok, Thailand<br><br>
+DM to book · Walk-ins welcome<br>
+<a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Tattoo%20%26%20Barber%20D%E2%80%99An%2C%20Bangkok%2C%20Thailand" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS →</a>
+</div>
+<div><strong>OPENING HOURS</strong><br><br>Tattoo — 11:00–01:00<br>Barber — 12:00–20:00<br><br>WhatsApp: 096 965 9964</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-logo">D’AN</div>
+<div>TATTOO / BARBER<br>BANGKOK, THAILAND</div>
+</footer>
+</body>
+</html>
